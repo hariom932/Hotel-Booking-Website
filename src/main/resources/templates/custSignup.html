@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- External Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-X8wMRE62PScVJuJy9OVTPE3JvL/6bhjS23ORgk/HAE5fAePFkFrvStELRZKLvVV8kCvfMB4GhtoBlTNhSivPWw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://source.unsplash.com/1920x1080/?hotel');
+            background-size: 100% 100%;
+            background-size: cover;
+            background-position: center;
+    }
+    .signup-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ced4da;
+    }
+    .form-group input[type="text"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group input[type="password"]:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+    .btn-signup {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-signup:hover {
+      background-color: #0056b3;
+    }
+    .social-icons {
+      text-align: center;
+    }
+    .social-icon {
+      display: inline-block;
+      margin: 0 5px;
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s;
+    }
+    .social-icon:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Sign Up</h2>
+    <form action="" method="post">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email or Mobile number</label>
+        <input type="text" id="email" name="email" placeholder="Enter Email or Mobile Number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      </div>
+      <button type="submit" class="btn-signup">Sign Up</button>
+      
+    </form>
+  </div>
+</body>
+</html>

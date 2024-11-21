@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+        .leftBox
+        {
+            height: 100%;
+            flex:1;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .leftBox iframe,.rightBox iframe
+        {
+            width: 450px;
+            height: 500px;
+            border: none;
+        }
+        .rightBox
+        {
+            height: 100%;
+            flex: 1;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn
+        {
+            background-color: rgb(23, 175, 112);
+            height: 30px;
+            position: absolute;
+             right: 10px;   
+             top: 10px;         
+             padding: 10px;
+             border-radius: 5px ;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftBox">
+                <iframe src="https://lottie.host/embed/53919ebe-dc9b-4bd3-a901-ebef0a026db9/4jagGvDiDJ.json"></iframe>
+                <a href="/admin/addhotel">
+                    <button>Add Hotel</button>
+                </a>
+
+                <a href="/admin/displayHotel">
+
+                <button>Display All Hotels</button>
+            </a>
+        </div>
+        <div class="rightBox">
+            <iframe src="https://lottie.host/embed/c626c8f3-8991-4e9f-80f0-0ba1194e3ed2/ZXd8CIbSVO.json"></iframe>
+            <div>
+                <button>
+                    <a href="/admin/addRestaurant">Add Restaurant</a>
+                </button>
+
+                <button>
+                    <a href="/admin/displayRestaurant">Display All Restaurant</a>
+                </button>
+            </div>
+        </div>
+        <a href="">
+        <button class="btn">Log-out</button>
+    </a>
+    </div>
+</body>
+</html>

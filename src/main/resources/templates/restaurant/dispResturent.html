@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Information</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        background-image: url('https://source.unsplash.com/1920x1080/?dishes');
+    }
+    
+    .restaurant-info {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .info-item {
+        margin-bottom: 20px;
+    }
+    
+    .info-label {
+        font-weight: bold;
+    }
+    
+    .info-value {
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+    <div th:each="item:${data}">
+
+<div class="restaurant-info">
+    <div class="info-item">
+        <span class="info-label">Name:</span>
+        <span th:text="${item.getName()}"></span>
+    </div>              
+    <div class="info-item">
+        <span class="info-label">Best Dish:</span>
+        <span th:text="${item.getDish()}"></span>
+    </div>
+    <div class="info-item">
+        <span class="info-label">Description:</span>
+        <p th:text="${item.getDescription()}"></p>
+    </div>
+    <button><a th:href="@{/restaurant/delete/{rid}(rid=${item.getRid()})}">Remove</a></button>
+</div>
+</div>
+</body>
+</html>
