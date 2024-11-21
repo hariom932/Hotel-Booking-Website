@@ -1,0 +1,1 @@
+Developed a dynamit web application using Spring boot,MYSQL and java. Aimed to facilitating to book a room in hotels in anyware and everywhare. The feactured user authentication and authorization to allow registered users to book rooms in hotels, Custom catogires, responsive design and enhancing user experience.The application is fast,secure and scalable.
